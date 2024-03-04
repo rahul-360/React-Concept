@@ -5,7 +5,12 @@ export default function ClearUp() {
 
     const CurrentScreenWidth = () => { setWindCount(() => window.innerWidth) }
 
-    useEffect(() => { window.addEventListener("resize", CurrentScreenWidth) })
+    useEffect(() => {
+        window.addEventListener("resize", CurrentScreenWidth)
+        return () => {
+            window.removeEventListener("resize", CurrentScreenWidth);
+        };
+    })
     return (
         <div>
             <h1>Hello Clear Up</h1>
