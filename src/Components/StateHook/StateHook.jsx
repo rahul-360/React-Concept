@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-export default function StateHook() {
+export default function StateEffect() {
   const [name, setName] = useState(0)
 
   return (

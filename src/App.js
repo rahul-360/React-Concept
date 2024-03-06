@@ -1,15 +1,23 @@
 import './App.css';
-import StateHook from './Components/Hook/stateHook';
-import EffectHook from './Components/Hook/effectHook';
-import ClearUp from './Components/Hook/clearUp';
 import React, { useState } from "react";
+import ClearUp from './Components/StateHook/ClearUp';
+import StateEffect from './Components/StateHook/StateHook';
+import UseStateEffect from './Components/StateHook/UseState';
+// import UseContext from './Components/StateHook/UseContext';
+
+import UseEffect from './Components/EffectHook/UseEffect';
+import EffectHook from './Components/EffectHook/EffectHook';
 
 function App() {
   return (
     <div className="App">
-      <ClearUp/>
-      <EffectHook />
-      <StateHook />
+      {/* <ClearUp /> */}
+      {/* <StateEffect /> */}
+      {/* <UseStateEffect /> */}
+      {/* <UseContext /> */}
+
+      {/* <UseEffect /> */}
+      {/* <EffectHook /> */}
     </div>
   );
 }
