@@ -8,9 +8,15 @@ import UseStateEffect from './Components/StateHook/UseState';
 import UseEffect from './Components/EffectHook/UseEffect';
 import EffectHook from './Components/EffectHook/EffectHook';
 
+import Props from './Components/Props/UseProps';
+
 function App() {
   return (
     <div className="App">
+      <Props name="2.0" />
+
+      {/* <UseEffect /> */}
+
       {/* <ClearUp /> */}
       {/* <StateEffect /> */}
       {/* <UseStateEffect /> */}
